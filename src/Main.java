@@ -28,5 +28,10 @@ public class Main {
         Partie partie = new Partie(nb_tours, listDe);
         partie.initialiser();
         partie.lancer();
+
+        /**
+         * Affichage du gagnant
+         */
+        partie.afficher_gagnant();
     }
 }
