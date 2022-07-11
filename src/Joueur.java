@@ -45,16 +45,16 @@ public class Joueur {
      * @param gobelet de type Gobelet.
      * @return score
      */
-    public int jouer(Gobelet gobelet){
+    public void jouer(Gobelet gobelet){
        int score = gobelet.lancer();
-       this.setScore(score);
-       return get_score();
+       this.score += gobelet.get_valeur();
+       gobelet.afficher_score();
     }
 
     /**
      * La méthode afficher_score affiche le nom du joueur et son score lors du lancer.
      */
     public void afficher_score(){
-        System.out.println("Le score du joueur " + this.get_nom() + " est : " + this.get_score());
+        System.out.println("Le score de " + this.get_nom() + " est : " + this.get_score());
     }
 }
