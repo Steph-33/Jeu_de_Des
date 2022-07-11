@@ -23,15 +23,17 @@ public class Main {
         }
 
         /**
-         * Initialisation et lancement de la partie
+         * Instanciation de la classe Gobelet.
          */
-        Partie partie = new Partie(nb_tours, listDe);
+        Gobelet gobelet = new Gobelet(listDe);
+
+        /**
+         * Initialisation et lancement de la partie. Affichage du gagnant.
+         */
+        Partie partie = new Partie(nb_tours, gobelet);
         partie.initialiser();
         partie.lancer();
 
-        /**
-         * Affichage du gagnant
-         */
-        partie.afficher_gagnant();
+
     }
 }

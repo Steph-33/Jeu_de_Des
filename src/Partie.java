@@ -9,9 +9,9 @@ public class Partie {
     private Gobelet gobelet;
 
     // Constructeur
-    public Partie(int nb_tours, List<De> nb_des) {
+    public Partie(int nb_tours, Gobelet gobelet) {
         this.nb_tours = nb_tours;
-        this.gobelet = new Gobelet(nb_des);
+        this.gobelet = gobelet;
     }
 
     // Méthodes
@@ -37,7 +37,7 @@ public class Partie {
     /**
      * La méthode lancer simule le fait que chaque joueur joue à tour de rôle pendant n tours.
      */
-    public Joueur lancer() {
+    public void lancer() {
         Joueur gagnant = this.joueurs.get(0);
         for (int i = 0; i < this.nb_tours; i++) {
             for (Joueur joueur : joueurs) {
@@ -48,11 +48,11 @@ public class Partie {
                 }
             }
         }
-        return gagnant;
+        this.afficher_gagnant(gagnant);
     }
 
-    public void afficher_gagnant(){
-        System.out.println("Le gagnant est " + this.lancer().get_nom());
+    public void afficher_gagnant(Joueur gagnant){
+        System.out.println("Le gagnant est " + gagnant.get_nom() + "avec un score de " + gagnant.getScore());
     }
 
 }

@@ -45,10 +45,10 @@ public class Joueur {
      * @param gobelet de type Gobelet.
      * @return score
      */
-    public int jouer(Gobelet gobelet){
+    public void jouer(Gobelet gobelet){
        int score = gobelet.lancer();
-       this.setScore(score);
-       return get_score();
+       this.score += gobelet.get_valeur();
+       gobelet.afficher_score();
     }
 
     /**
