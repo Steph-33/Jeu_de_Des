@@ -8,10 +8,19 @@ public class De {
     }
 
     // Méthodes
+
+    /**
+     * La méthode get_valeur() renvoie la valeur initiale du dé.
+     * @return valeur
+     */
     public int get_valeur(){
         return this.valeur;
     }
 
+    /**
+     * La méthode lancer() renvoie une valeur aléatoire comprise entre 1 et 6 pour simuler la lancé du dé.
+     * @return valeur aléatoire entre 1 et 6.
+     */
     public int lancer(){
         int max = 6;
         int min = 1 ;
