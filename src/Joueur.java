@@ -55,6 +55,6 @@ public class Joueur {
      * La méthode afficher_score affiche le nom du joueur et son score lors du lancer.
      */
     public void afficher_score(){
-        System.out.println("Le score du joueur " + this.get_nom() + " est : " + this.get_score());
+        System.out.println("Le score de " + this.get_nom() + " est : " + this.get_score());
     }
 }
