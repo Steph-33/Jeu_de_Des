@@ -8,7 +8,9 @@ public class Main {
             listDe.add(new De());
         }
         Gobelet gobelet = new Gobelet( listDe);
-        gobelet.lancer();
-        gobelet.afficher_score();
+
+        Joueur joueur = new Joueur("Steph");
+        joueur.jouer(gobelet);
+        joueur.afficher_score();
     }
 }
