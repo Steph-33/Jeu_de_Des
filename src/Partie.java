@@ -34,12 +34,18 @@ public class Partie {
         return this.joueurs;
     }
 
+    /**
+     * La méthode lancer simule le fait que chaque joueur joue à tour de rôle pendant n tours.
+     */
     public void lancer(){
         for(int i = 0 ; i < this.joueurs.size(); i++){
-            for(int j = 0 ; j < this.nb_tours ; j++){
-                this.joueurs.get(i).jouer(this.gobelet);
-                this.joueurs.get(i).afficher_score();
-            }
+            int score = 0;
+            // for(int j = 0 ; j < this.nb_tours ; j++){
+                this.joueurs.get(0).jouer(this.gobelet);
+                score = this.joueurs.get(0).get_score();
+                System.out.println("Le score de " + this.joueurs.get(i).get_nom() + " est : " + score);
+                // this.joueurs.get(i).afficher_score();
+            // }
         }
     }
 
