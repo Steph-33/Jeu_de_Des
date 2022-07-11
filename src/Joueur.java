@@ -40,18 +40,19 @@ public class Joueur {
         return this.score;
     }
 
-    //- afficher_score() : affiche en console le score du joueur
-
     /**
      * La méthode jouer() prend en paramètre un objet de type Gobelet et renvoie la mise à jour du score du jouer
      * @param gobelet de type Gobelet.
      * @return score
      */
-    public int jouer(Gobelet gobelet){
+    /* public int jouer(Gobelet gobelet){
        int score = gobelet.lancer();
        return this.setScore(score);
-    }
+    }*/
 
+    /**
+     * La méthode afficher_score affiche le nom du joueur et son score lors du lancer.
+     */
     public void afficher_score(){
         System.out.println("Le score du joueur " + this.get_nom() + " est : " + this.get_score());
     }
