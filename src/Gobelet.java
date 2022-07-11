@@ -28,9 +28,6 @@ public class Gobelet {
         this.des = nb_des;
     }
 
-    // Getters et Setters
-
-
     // Méthodes
 
     /**
@@ -41,11 +38,11 @@ public class Gobelet {
         return this.valeur;
     }
     //- lancer() : change la valeur des dés du gobelet ; met à jour la valeur du gobelet
-    public double lancer(){
+    public int lancer(){
 
-        De.lancer();
 
-        return this.valeur;
+
+        return 3;
     }
 
     //- afficher_score() : affiche en console le score du dernier lancé de gobelet
