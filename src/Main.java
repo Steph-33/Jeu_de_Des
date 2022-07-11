@@ -7,10 +7,13 @@ public class Main {
         for(int i = 0 ; i < 3 ; i++){
             listDe.add(new De());
         }
-        Gobelet gobelet = new Gobelet( listDe);
+        // Gobelet gobelet = new Gobelet( listDe);
+        // Joueur joueur = new Joueur("Steph");
+        // joueur.jouer(gobelet);
+        // joueur.afficher_score();
 
-        Joueur joueur = new Joueur("Steph");
-        joueur.jouer(gobelet);
-        joueur.afficher_score();
+        Partie partie = new Partie(4, listDe);
+        partie.initialiser();
+        partie.lancer();
     }
 }

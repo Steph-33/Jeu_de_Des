@@ -16,7 +16,6 @@ public class Gobelet {
     }
 
     // Méthodes
-
     /**
      * La méthode get_valeur() renvoie la valeur du gobelet
      * @return valeur
